@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-size: cover;
+    background-image: url(../image/tk2.jpg);
+
+      /* 背景图片自适应 */
+    background-attachment: fixed;
+
+  
+}
+
+/* ————————————————个人主页—————————————————— */
+/* 返回主页 */
+.Home img{ 
+    top: 5px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    z-index: 1000;
+    top: 10px;
+    bottom: 4px;
+    left: 160px;
+    right: 0;
+ 
+    
+}
+.biaoti{
+    position: fixed;
+    width: 100%; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-family: 千图纤墨体;
+    font-size: 24px;
+    letter-spacing: 3px;
+    background: rgba(108, 133, 247, 0.5);
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.A{
+    background-color: rgb(0, 0, 0,0.5);
+    margin: auto;
+    width: 1188px;
+    height: 750px;
+    margin-top: 50px;
+    /* overflow-y: scroll; */
+    /* background-size: cover; */
+}
+
+/* 个人信息卡片 */
+.xingxi{
+    padding-top: 8px;
+    width: 800px;
+    height: 350px;
+    margin: 65px auto 0 auto;
+    border-radius: 15px;
+    background-color: rgba(236, 236, 236, 0.5);
+    transition: all 1.0s;
+
+}
+
+.xingxi img{
+    float: left;
+	width: 150px;
+	height: 150px;
+	margin: 100px 0 0 80px;
+	border-radius: 100px;
+}
+
+.xingxi:hover{
+    box-shadow: 0px 0px 80px rgba(108, 133, 247, 0.5);
+    width: 850px;
+    height: 355px;
+}
+
+.wz{
+    float: right;
+    width: 500px;
+    margin: 70px 18px 0 0;
+}
+
+.wz1{
+    float: left;
+	width: 100%;
+	text-align: center;
+
+}
+
+.wz1 h2{
+    font-size: 45px;
+    font-family: STCAIYUN;
+    color: #4855EC;
+}
+
+.wz2{
+    margin-top: 10px;
+	color: #1F2023;
+	font-size: 20px;
+    font-family: 千图纤墨体;
+
+}
+
+.wz3{
+    margin-top: 9px;
+    color: #4855EC;
+	font-size: 22px;
+    font-family: VLADIMIR;
+}
+
+.wz4{
+    color: #20a162;
+    font-size: 25px;
+    font-family: 字魂扁桃体;
+    margin-top: 10px;
+    
+}
+
+.wz5{
+    color: #eb507e;
+    font-size: 16px;
+
+}
+
+
+
+/* 爱好列举 */
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 允许换行 */
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 240px;
+    height: 340px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #e2e2e2;
+    /* 阴影 */
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1),
+    0 2px 2px rgba(0,0,0,0.1),
+    0 4px 4px rgba(0,0,0,0.1),
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.card::before{
+    content: "";
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform 1s cubic-bezier(0.19,1,0.22,1);
+}
+
+/* 分别设置图片 */
+.card:nth-child(1)::before{
+    background-image: url(../image/zhanshi1.jpg);
+}
+.card:nth-child(2)::before{
+    background-image: url(../image/zhanshi2.jpg);
+}
+.card:nth-child(3)::before{
+    background-image: url(../image/zhanshi3.jpg);
+}
+.card:nth-child(4)::before{
+    background-image: url(../image/zhanshi4.jpg);
+}
+/* 遮罩 */
+.card::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.25) 55%,
+    rgba(0,0,0,0.8) 100%);
+    /* 绝对定位 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    /* 过渡效果 */
+    transition: transform 1.4s cubic-bezier(0.19,1,0.22,1);
+}
+.card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 16px 8px;
+    transform: translateY(76%);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+.card h2{
+    font-size: 23px;
+    font-weight: bold;
+    font-family:千图纤墨体 ;
+    letter-spacing: 4px;
+    font-weight: 200;
+
+}
+.card p{
+    font-size: 15px;
+    /* 字间距 */
+    letter-spacing: 2px;
+    width: 80%;
+    line-height: 30px;
+    margin-top: 25px;
+    /* 文本两端对齐 */
+    text-align: justify;
+    font-family:庞门正道标题体2.0增强版 ;
+    
+}
+.card button{
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.card button:hover{
+    background-color: #000;
+}
+.card .content *:not(h2){
+    /* .content下，除了h2，其他元素隐藏并下移20px */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.7s cubic-bezier(0.19,1,0.22,1),opacity 0.7s cubic-bezier(0.19,1,0.22,1);
+}
+.card:hover{
+    align-items: center;
+}
+.card:hover::before{
+    transform: translateY(-5%);
+}
+.card:hover::after{
+    transform: translateY(-50%);
+}
+.card:hover .content{
+    transform: translateY(0);
+}
+.card:hover .content *:not(h2){
+    opacity: 1;
+    transform: translateY(0);
+    /* 过渡效果延迟 */
+    transition-delay: 0.1s;
+}

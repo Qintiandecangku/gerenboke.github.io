@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-size: cover;
+    background-image: url(../image/tk2.jpg);
+
+      /* 背景图片自适应 */
+    background-attachment: fixed;
+
+  
+}
+
+
+/* 1、导航 */
+header{
+    margin: auto;
+     position: fixed;
+    z-index: 1000;
+    /* right: 0;
+    bottom: 0;
+    left: 0px;
+    top: 0px; */
+    width: 100%; 
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 字魂扁桃体;
+    background: rgba(108, 133, 247, 0.5);
+    height: 8vh;
+    
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+   font-size: 24px;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+}
+
+/* main{
+ height: 92vh;
+}  */
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+ letter-spacing: 3px;
+ margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+
+/* 导航自适应屏幕 */
+@media(max-width:999px ){
+    body{
+       overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top:8vh;
+        right: 0;
+        width:50vw ;
+        height: 92vh;
+        background: rgba(108, 133, 247, 0.5);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in; 
+    }
+     .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    } 
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }  
+
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px,8px);
+
+}
+.mobile-menu.active .line2{
+    opacity: 0;
+
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px,-7px);
+
+}  
+
+
+
+/* 2、轮播图 */
+.out{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 800px; 
+}
+
+.out>ul{
+	/* position: relative; */
+	margin:  auto; 
+    width: 900px;
+	height: 700px;
+	transform: scale(0.6);
+}
+.out>ul>li{
+	position: absolute;
+	opacity: 0;
+	transition: all,1s;
+    /* margin-top: 5px; */
+}
+.out>ul>li:hover{
+	cursor: pointer;
+}
+.out>ul>li>img{
+    padding-top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.out>.anNiu{
+	position: absolute;
+	border: 1px rgb(255, 255, 255,0.5) solid;
+	top: 350px;
+	width: 50px;
+	line-height: 100px;
+    color: aliceblue;
+}
+.out>.anNiu:hover{
+	cursor: pointer;
+}
+
+#anNiu1{
+	left: 170px;
+}
+#anNiu2{
+	right: 170px;
+}
+.out>ol{
+	position: absolute;
+	top: 600px;
+	left: 44%;
+}
+.out>ol>li{
+	background-color: rgb(255, 255, 255);
+	width: 10px ;
+	height: 10px;
+	float: left;
+	margin-left: 10px;
+	border-radius: 50%;
+}
+.out>ol::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.juzi p{
+    color: rgb(255, 255, 255,0.9);
+    font-size: 16px;
+
+}
+
+.juzi p:hover{
+    opacity: 0.7;
+    color: rgb(0, 162, 255);
+    font-family: STHUPO;
+    letter-spacing: 2px;
+    font-weight: 20px;
+    font-size: 25px;
+    transition: 1s;
+
+}
+

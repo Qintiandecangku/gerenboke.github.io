@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主菜单</title>
+    <link rel="stylesheet" type="text/css" href="css/one.css">
+</head>
+<body>
+    <script src="js/one.js" defer="defer" type="text/javascript" charset="utf-8"></script>
+    <script src="lb.js" defer="defer" type="text/javascript" charset="utf-8"></script>
+
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <a href="#out" class="logo">晴天的博客</a>
+            <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="two.html" >个人主页</a></li><!-- 个人信息，出生年月，爱好 -->
+                <li><a href="three.html">我的收藏</a></li>
+                <li><a href="four.html">音乐馆</a></li>
+                <!-- <li><a href="five.html">故乡&远方</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 轮播图 -->
+    <div class="out" id="out">
+        <ul>
+            <li class="images">
+                <img src="image/001.jpg" >
+            </li>
+            <li class="images">
+                <img src="image/002.jpg">
+            </li>
+            <li class="images">
+                <img src="image/003.jpg" >
+            </li>
+            <li class="images">
+                <img src="image/004.jpg" >
+            </li>
+            <li class="images">
+                 <img src="image/005.jpg" >
+            </li>
+        </ul>
+        <p class="anNiu" id="anNiu1" onclick="dianJi(0)">&lt;</p>
+        <p class="anNiu" id="anNiu2" onclick="dianJi(1)">&gt;</p>
+        <ol>
+            <li class="anNius" onclick="anNius(0)"></li>
+            <li class="anNius" onclick="anNius(1)"></li>
+            <li class="anNius" onclick="anNius(2)"></li>
+            <li class="anNius" onclick="anNius(3)"></li>
+            <li class="anNius" onclick="anNius(4)"></li>
+        </ol>
+        <div class="juzi"><p>大概人们不找个东西沉醉就活不下去吧，大家，都是某些事物的奴隶</p></div>
+    </div>
+</body>
+</html>

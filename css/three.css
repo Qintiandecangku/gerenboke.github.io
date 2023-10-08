@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-size: cover;
+    background-image: url(../image/tk2.jpg);
+
+      /* 背景图片自适应 */
+    background-attachment: fixed;
+
+  
+}
+
+/* ——————————我的推荐—————————— */
+/* 返回主页 */
+.Home img{ 
+    top: 5px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    z-index: 1000;
+    top: 10px;
+    bottom: 4px;
+    left: 160px;
+    right: 0;
+ 
+    
+}
+
+.top img{
+    color: rgba(108, 133, 247, 0.5);
+    width: 75px;
+    height: 75px;
+    z-index: 1000;
+    position: fixed;
+    top: 680px;
+    bottom: 4px;
+    left: 1332px;
+    right: 0;
+}
+
+.top img:hover{
+    width: 70px;
+    height: 70px;
+    box-shadow: 5px 5px 10px 0px rgb(78, 113, 203,0.85);
+
+
+}
+
+.biaoti{
+    position: fixed;
+    width: 100%; 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    font-family: 千图纤墨体;
+    font-size: 24px;
+    letter-spacing: 3px;
+    background: rgba(108, 133, 247, 0.5);
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* .bt{
+    writing-mode: tb-rl;
+    font-size: 45px;
+    text-align: center;
+} */
+
+/* 动漫收藏 */
+.A{
+    /* background-color: rgb(255, 255, 255,0.5); */
+    margin: auto;
+    width: 1000px;
+    height: 1850px;
+    margin-top: 80px;
+    /* display: flex; */
+    flex-wrap: center;
+    justify-content: center;
+}
+
+
+
+.one{
+    float: left;
+     width: 150px;
+     height: 1800px;
+     background-color: rgba(232, 36, 164, 0.5);
+     margin:30px 0px 8px 20px ;
+     border-radius: 30px;
+    /* 上右下左 */
+
+
+}
+
+.bt{
+    margin: 100px 20px 0px 30px;
+    width: 100px;
+    height: 400px;
+    font-family: STHUPO;
+    /* background-color: rgb(255, 19, 243); */
+}
+
+.bt p{
+    margin: 20px;
+    writing-mode: tb-rl;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.two{
+   float: right;
+   margin: 0%;
+   width: 800px;
+   height: 1800px;
+   margin:30px 10px 0px 10px ;
+   /* background-color: rgba(226, 229, 80, 0.5); */
+   border-radius: 5px;
+}
+
+
+.box{
+    width: 750px;
+    height: 319px;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 5px 5px 10px 0px rgb(78, 113, 203,0.85);
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgba(81, 119, 232, 0.78);
+}
+
+.wz{
+   width: 400px;
+   height: 300px;
+   float: left;
+   margin-right: 25px;
+}
+
+.box img{
+     float: right;
+     margin-right: 20px;
+     margin-top: 30px;
+     width: 260px;
+     height: 260px;
+}
+
+
+
+.A h2{
+    color: rgb(45, 226, 4);
+    margin: 20px;
+    font-family: 千图纤墨体;
+    letter-spacing: 10px;
+}
+
+.A h3{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+/* A  p{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    
+
+} */
+
+.p2{
+    color: aliceblue;
+    margin-top: auto;
+    margin-left: 30px;
+    line-height: 25px;
+    width: 400px;
+    height: 350px;
+}
+
+.B h2{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+.B p{
+    color: rgb(255, 255, 255);
+    margin: 20px;
+
+}
+
+.box:hover{
+    scale: 0.97;
+    box-shadow: none;
+}
+
+
+
+/* 照片墙 */
+
+.B{
+    /* background-color: rgb(255, 255, 255,0.5); */
+    margin: auto;
+    width: 1000px;
+    height: 1090px;
+    margin-top: 80px;
+    /* display: flex; */
+    flex-wrap: center;
+    justify-content: center; 
+}
+
+.one2{
+    float: right;
+     width: 150px;
+     height: 4450px;
+     background-color: rgba(40, 232, 104, 0.5);
+     margin:30px 20px 8px 10px ;
+     border-radius: 30px;
+    /* 上右下左 */
+
+
+}
+
+.two2{
+    float: left;
+    margin: 0%;
+    width: 800px;
+    height: 4450px;
+    margin:30px 10px 0px 10px ;
+    /* background-color: rgb(214, 127, 65,0.5); */
+    border-radius: 5px;
+ }
+
+ .box2{
+    width: 700px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    margin: 15px 0px 0px 50px;
+    /* margin-top: 5px;
+    margin-left: 5px; */
+    box-shadow: 5px 5px 10px 0px lightgray;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: blueviolet;
+}
+
+.tp img{
+    width: 700px;
+    height: 350px;
+}
+ 
+
+.box2:hover{
+    scale: 0.97;
+    box-shadow: none;
+}

@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+*{
+    margin: 0%;
+    top: 0%;
+}
+
+body{
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input::-webkit-input-placeholder {
+            color:rgb(1, 255, 99);
+    }
+.one{
+    width: 350px;
+    height: 350px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left:1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(1px);
+    background: rgba(1, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+}
+
+.one h2{
+     color: rgba(255, 255, 255, 0.9);
+     margin-bottom: 6px;
+     font-family:字魂扁桃体;
+     font-size: 35px;
+     /* font-weight: 100; */
+}
+
+.one .two{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.one .two label{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 5px;
+    font-family:字魂扁桃体;
+    font-weight: 100; 
+}
+
+.one .two input{
+    letter-spacing: 1px;/* 字间距 */
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    padding: 0 12px;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.2s;
+}
+
+.one .two input:focus{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.one .three{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.one .three a{
+    outline: none;/* 使绘制于元素周围的一条线无效 */
+    display: block;/* 将行内元素设置为块状元素 */
+    width: 250px;
+    text-align: end;/* 内容对齐结束边界 */
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.one .three a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.one .three div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one .three div button{
+    outline: none;
+    margin-top: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: 0.2s;
+    font-family:字魂扁桃体;
+    font-size: 18px;
+}
+
+/* nth-of-type(n) : 匹配同类型中的第n个同级兄弟元素。 */
+.one .three div button:nth-of-type(1){
+  width: 100px;
+  height: 35px;
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(30, 75, 180, 0.7);
+  background: rgba(108, 133, 247, 0.5);
+}
+
+.one .three div button:nth-of-type(2){
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(00, 96, 96,0.7);
+    background: rgba(108, 133, 247, 0.5);
+  }
+
+  .one .three div button:hover{
+    border: 1px solid rgba(00, 96, 96);
+    background: rgba(40, 68, 190, 0.886);
+  }
